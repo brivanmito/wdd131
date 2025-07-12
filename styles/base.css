@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    max-width: 100%;
+    font-family: Jost, JetBrains Mono, Arial;
+}
+
+header {
+    text-align: center;
+    color: whitesmoke;
+    background-color: rgba(5, 36, 120, 0.783);
+}
+#course-title {
+    display: inline-block;
+    padding: 2rem;
+    font-family: Libre Franklin;
+    /* opcional, para visualizar el área con padding */
+}
+nav {
+    list-style: none;
+    display: flex;
+    background: #252424;
+}
+nav a {
+    text-decoration: none;
+    display: block;
+    padding: 1.5rem;
+    color: whitesmoke;
+}
+nav li {
+    flex: 1;
+}
+nav a:hover {
+    color: rgba(5, 36, 120, 0.783);
+    background-color: #a5a1a1;
+
+}
