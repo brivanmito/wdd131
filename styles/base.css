@@ -21,7 +21,6 @@ header {
     display: block;
     padding: 1.5rem;
     font-family: Libre Franklin;
-    /* opcional, para visualizar el área con padding */
 }
 nav {
     list-style: none;
@@ -107,5 +106,8 @@ footer {
     background-color:rgba(5, 36, 120, 0.783);
     padding: 2rem;
     width: 100%;
+}
+#lastModified {
+    color: yellow;
 }
 
