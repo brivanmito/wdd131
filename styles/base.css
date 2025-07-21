@@ -26,12 +26,14 @@ nav ul {
     list-style: none;
     display: flex;
     background: #252424;
+    font-weight: 500;
 }
 nav a {
     text-decoration: none;
     display: flex;
     padding: 1rem;
     color: whitesmoke;
+
     justify-content: center;
     align-items: center;
     height: 100%;
