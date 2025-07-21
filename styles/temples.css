@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Mobile view */
+:root {
+    --primary-color:#eb5e28;
+    --secondary-color:#252422;
+    --therciary-color: #ccc5b9;
+    --accent-color:#403d39;
+    --text-color: black;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    background-color: var(--therciary-color);
+}
+
+header {
+    background-color: var(--primary-color);
+}
+h1 {
+    padding: 1rem;
+}
+#menu {
+    font-size: 1.5rem;
+    background: none;
+    border: 0;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before{
+    content: "X";
+}
+
+.navigation ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    list-style: none;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--text-color);
+}
+.navigation a:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.open a {
+    display: block;
+}
+
