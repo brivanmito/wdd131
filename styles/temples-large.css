@@ -1,0 +1,42 @@
+@media screen and (min-width: 37.5em) {
+
+    /* Oculta el menú hamburguesa */
+    #menu {
+        display: none;
+    }
+
+    /* Header alineado en horizontal */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        /* Importante para que nav se estire a la altura de header */
+        padding: 0rem;
+        background-color: var(--primary-color);
+    }
+
+
+    .navigation ul {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: stretch;
+        height: 100%;
+    }
+
+    .navigation a {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 0rem 2rem;
+        text-decoration: none;
+    }
+
+    .navigation a:hover {
+        background-color: var(--accent-color);
+        color: var(--primary-color);
+        font-weight: 700;
+        transform: scale(1);
+    }
+
+    
+}
