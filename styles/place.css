@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Prata&display=swap');
+
+*
+ {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: yellow;
+    --secondary-color: blue;
+    --third-color: red;
+    --padding-text: 1rem;
+}
+body {
+    font-family: 'Alata', sans-serif;
+}
+picture img{
+    width: 100%;
+    height: auto;
+}
+
+header {
+    height: 10rem;
+    background-color: black;
+    text-align: center;
+    font-family: 'Prata', sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+.color:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    height: 7rem;
+}
+.color:nth-child(2) {
+
+    background-color: var(--secondary-color);
+    height: 1.5rem;
+}
+.color:nth-child(3) {
+
+    background-color: var(--third-color);
+    height: 1.5rem;
+}
