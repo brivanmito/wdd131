@@ -16,7 +16,7 @@
 }
 body {
     font-family: 'Alata', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 picture img{
@@ -35,11 +35,11 @@ section {
     text-align: center;
     margin: 1.5rem auto;
 }
-p {
+section p {
     padding: var(--padding-p);
 }
 section img{
-    width: 15%;
+    width: 10%;
 }
 
 
@@ -110,4 +110,11 @@ header {
     margin-bottom: 2rem;
     z-index: 1;
 
+}
+
+footer {
+    height: 6rem;
+    background-color: var(--primary-color);
+    padding: var(--padding-p);
+    text-align: center;
 }

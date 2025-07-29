@@ -1,0 +1,43 @@
+@media screen and (min-width: 37.5em) {
+    main {
+        position: relative;
+    }
+    section {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: var(--padding-text);
+    word-break: break-word;
+    }
+    section:nth-of-type(1) {
+        top: 3rem;
+        left: 3rem;
+        width: 30%;
+    }
+    section:nth-of-type(2) {
+        bottom: 3rem;
+        right: 3rem;
+        width: 30%;
+    }
+
+    h2 {
+        position: absolute;
+        background-color: rgba(255, 238, 0, 0.95);
+        width: 75%;
+        left: -0.625rem;
+        top: 15px;
+        padding: 6px 20px;
+        box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+        text-align: left;
+    
+    }
+
+    section p {
+        padding-top: 60px;
+    }
+
+    picture img{
+        width: 100%;
+        background-color: brown;
+
+    }
+}
