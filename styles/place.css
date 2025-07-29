@@ -16,8 +16,9 @@
 body {
     font-family: 'Alata', sans-serif;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 400;
 }
+
 picture img{
     width: 100%;
     height: auto;
@@ -34,9 +35,7 @@ section {
     text-align: center;
     margin: 1.5rem auto;
 }
-section p {
-    padding: var(--padding-p);
-}
+
 section img{
     width: 10%;
 }
@@ -78,4 +77,24 @@ footer {
     background-color: var(--primary-color);
     padding: var(--padding-p);
     text-align: center;
+}
+
+
+#data {
+    padding-top: 2rem;
+}
+table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+        
+table td:first-child {
+    text-align: right;
+    padding-right: 10px;
+}
+table td:last-child {
+    text-align: left;
+    padding-left: 10px;
 }

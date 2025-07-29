@@ -3,10 +3,10 @@
         position: relative;
     }
     section {
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: var(--padding-text);
-    word-break: break-word;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: var(--padding-text);
+        word-break: break-word;
     }
     section:nth-of-type(1) {
         top: 3rem;
@@ -30,6 +30,7 @@
         box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
     
     }
+    
     main section:nth-of-type(2) h2::after {
         content: "🌥️";
         padding-left: 0.5rem;
@@ -38,10 +39,22 @@
         display: none;
     }
 
-    section p {
-        padding-top: 60px;
-    }
+    table, #data {
+        padding-top: 3.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
+    }
+        
+    table td:first-child {
+        text-align: right;
+        padding-right: 10px;
+    }
+    table td:last-child {
+        text-align: left;
+        padding-left: 10px;
+    }
 
     
 }
