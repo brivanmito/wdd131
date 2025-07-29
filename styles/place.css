@@ -12,14 +12,74 @@
     --secondary-color: blue;
     --third-color: red;
     --padding-text: 1rem;
+    --padding-p: 1.5rem;
 }
 body {
     font-family: 'Alata', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 picture img{
     width: 100%;
     height: auto;
+    display: block;
+    border-bottom: 0.5rem solid var(--primary-color);
 }
+
+main {
+    display: block;
+}
+
+section {
+    word-break: break-word;
+    text-align: center;
+    margin: 1.5rem auto;
+}
+p {
+    padding: var(--padding-p);
+}
+section img{
+    width: 15%;
+}
+
+
+/* main {
+    position: relative;
+}
+
+section {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: var(--padding-text);
+    word-break: break-word;
+}
+section:nth-of-type(1) {
+    top: 3rem;
+    left: 3rem;
+    width: 30%;
+}
+section:nth-of-type(2) {
+    bottom: 3rem;
+    right: 3rem;
+    width: 30%;
+}
+
+h2 {
+    position: absolute;
+    background-color: rgba(255, 238, 0, 0.95);
+    width: 75%;
+    left: -0.625rem;
+    top: 15px;
+    padding: 6px 20px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+  
+}
+
+section p {
+    padding-top: 60px;
+} */
+
+
 
 header {
     height: 10rem;
@@ -29,20 +89,25 @@ header {
     letter-spacing: 0.1rem;
 }
 
-.color:nth-child(1) {
+.color:nth-of-type(1) {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--primary-color);
     height: 7rem;
 }
-.color:nth-child(2) {
+.color:nth-of-type(2)  {
 
     background-color: var(--secondary-color);
     height: 1.5rem;
 }
-.color:nth-child(3) {
+.color:nth-of-type(3) {
 
     background-color: var(--third-color);
     height: 1.5rem;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.4);
+    position: relative;
+    margin-bottom: 2rem;
+    z-index: 1;
+
 }
