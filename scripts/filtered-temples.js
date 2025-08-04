@@ -56,28 +56,28 @@ const temples = [
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
     {
-        templeName: "Mexico City Mexico",
-        location: "Mexico City, Mexico",
-        dedicated: "1983, December, 2",
-        area: 116642,
+        templeName: "Guatemala City Guatemala",
+        location: "Guatemala City, Guatemala",
+        dedicated: "1984, December, 14-16",
+        area: 11610,
         imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+            "https://churchofjesuschristtemples.org/assets/img/temples/guatemala-city-guatemala-temple/guatemala-city-guatemala-temple-6407.jpg"
     },
     {
-        templeName: "Mexico City Mexico",
-        location: "Mexico City, Mexico",
-        dedicated: "1983, December, 2",
-        area: 116642,
+        templeName: "Tegucigalpa Honduras",
+        location: "Tegucigalpa, Honduras",
+        dedicated: "2013, March, 17",
+        area: 28254,
         imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+            "https://churchofjesuschristtemples.org/assets/img/temples/tegucigalpa-honduras-temple/tegucigalpa-honduras-temple-3878-main.jpg"
     },
     {
-        templeName: "Mexico City Mexico",
-        location: "Mexico City, Mexico",
-        dedicated: "1983, December, 2",
-        area: 116642,
+        templeName: "Guayaquil Ecuador",
+        location: "Guayaquil, Ecuador",
+        dedicated: "1999, August, 1 - 2",
+        area: 45000,
         imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+            "https://churchofjesuschristtemples.org/assets/img/temples/_temp/058-Guayaquil-Ecuador-Temple.jpg"
     }
 
 ]
