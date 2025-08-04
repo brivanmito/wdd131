@@ -110,6 +110,10 @@ temples.forEach(temple => {
     //Adding an ALT to the images
     templeImg.alt = temple.templeName;
 
+    //Adding the heith and width
+    templeImg.style.width = "100%";
+    templeImg.style.height = "auto";
+
     //Adding the lazy load property
     templeImg.loading = "lazy";
 
