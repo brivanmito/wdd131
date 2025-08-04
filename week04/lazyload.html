@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <!-- Meta tags -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131: W04 Assignament: Lazy Load - Bryan Mino</title>
+    <meta name="author" content="Bryan Mino">
+    <meta name="description"
+        content="This site will allow you to develop a responsive web page about a country or place, applying HTML, CSS, and JavaScript while strengthening design, development, and teamwork skills.">
+
+    <!-- Css file Styles -->
+
+    <link rel="stylesheet" href="styles/lazyload.css">
+
+    <!-- Google Fonts preconnected -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Prata&display=swap" rel="stylesheet">
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+
+</head>
+
+<body>
+
+    <main>
+        <h1>Lazy load Demostration</h1>
+
+        <img src="https://picsum.photos/id/1/400/600" alt="Image 0" width="400" height="600">
+        <img loading="lazy" src="https://picsum.photos/id/12/400/600" alt="Image 1" width="400" height="600">
+        <img loading="lazy" src="https://picsum.photos/id/23/400/600" alt="Image 2" width="400" height="600">
+        <img loading="lazy" src="https://picsum.photos/id/34/400/600" alt="Image 3" width="400" height="600">
+        <img loading="lazy" src="https://picsum.photos/id/45/400/600" alt="Image 4" width="400" height="600">
+        <img loading="lazy" src="https://picsum.photos/id/56/400/600" alt="Image 5" width="400" height="600">
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> &#128187; Bryan Mino &#128507; Quevedo, Ecuador
+        </p>
+        <p id="lastModified">
+            Last modification: 2025
+        </p>
+    </footer>
+</body>
+
+</html>
