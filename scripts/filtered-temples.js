@@ -82,54 +82,95 @@ const temples = [
 
 ]
 
-const gallery = document.querySelector("#gallery");
+// const gallery = document.querySelector("#gallery");
+const navLinks = document.querySelectorAll("nav li a");
+
+function createTempleCard(filteredTemples) {
+    gallery.innerHTML = "";
+    filteredTemples.forEach(temple => {
+
+        // Create a card por temples
+        const card = document.createElement("div");
+
+        //Create a class for styling the card class
+        card.classList.add("temple-card");
+
+        // Create the tags elements
+        const name = document.createElement("h3");
+        const location = document.createElement("p");
+        const dedicatedDate = document.createElement("p");
+        const area = document.createElement("p");
+        const templeImg = document.createElement("img");
+
+        // Assigning the values to the tags created
+        name.textContent = temple.templeName;
+        location.textContent = `Location: ${temple.location}`;
+        dedicatedDate.textContent = `Dedicated: ${temple.dedicated}`;
+        area.textContent = `Size: ${temple.area}`;
+        templeImg.src = temple.imageUrl;
+
+        //Adding an ALT to the images
+        templeImg.alt = `${temple.templeName} temple`;
+
+        //Adding the heith and width
+        templeImg.style.width = "100%";
+        templeImg.style.height = "auto";
+
+        //Adding the lazy load property
+        templeImg.loading = "lazy";
 
 
-temples.forEach(temple => {
+        //Adding to the div card
+        card.appendChild(name);
+        card.appendChild(location);
+        card.appendChild(dedicatedDate);
+        card.appendChild(area);
+        card.appendChild(templeImg);
 
-    // Create a card por temples
-    const card = document.createElement("div");
+        //Adding the card to the DOM
+        // gallery.appendChild(card);
 
-    //Create a class for styling the card class
-    card.classList.add("temple-card");
-
-    // Create the tags elements
-    const name = document.createElement("h3");
-    const location = document.createElement("p");
-    const dedicatedDate = document.createElement("p");
-    const area = document.createElement("p");
-    const templeImg = document.createElement("img");
-
-    // Assigning the values to the tags created
-    name.textContent = temple.templeName;
-    location.textContent = `Location: ${temple.location}`;
-    dedicatedDate.textContent = `Dedicated: ${temple.dedicated}`;
-    area.textContent = `Size: ${temple.area}`;
-    templeImg.src = temple.imageUrl;
-
-    //Adding an ALT to the images
-    templeImg.alt = temple.templeName;
-
-    //Adding the heith and width
-    templeImg.style.width = "100%";
-    templeImg.style.height = "auto";
-
-    //Adding the lazy load property
-    templeImg.loading = "lazy";
-
-
-    //Adding to the div card
-    card.appendChild(name);
-    card.appendChild(location);
-    card.appendChild(dedicatedDate);
-    card.appendChild(area);
-    card.appendChild(templeImg);
-
-    //Adding the card to the DOM
-    gallery.appendChild(card);
+        document.querySelector("#gallery").appendChild(card);
 
 
 
 
-    
+
+    });
+}
+
+function filteredTemples(option) {
+    let result = [];
+
+    switch (option) {
+        case "old":
+            result = temples.filter(t => parseInt(t.dedicated.split(",")[0]) < 1900);
+            break;
+        case "new":
+            result = temples.filter(t => parseInt(t.dedicated.split(",")[0]) > 2000);
+            break;
+        case "large":
+            result = temples.filter(t => t.area > 90000);
+            break;
+        case "small":
+            result = temples.filter(t => t.area < 10000);
+            break;
+        default:
+            result = temples;
+    }
+
+    createTempleCard(result);
+}
+
+
+createTempleCard(temples);
+
+// Creating boton 
+navLinks.forEach(link => {
+    link.addEventListener("click", (e) => {
+        e.preventDefault();
+        const text = link.textContent.toLowerCase();
+        filteredTemples(text);
+
+    });
 });
