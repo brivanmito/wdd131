@@ -109,4 +109,5 @@ footer {
 }
 .temple-card img {
     padding-top: 1rem;
+    object-fit: cover;
 }
