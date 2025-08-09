@@ -28,34 +28,51 @@
 <body>
     <h1>Product Review</h1>
     <form method="get" action="review.html">
-        <label>Product Name
+        <fieldset>
+            <legend>Product Name</legend>
+
             <select name="pnames" id="pnames" required>
                 <option value="" disabled selected>Please Select &#9662;</option>
                 <!-- The remaining options should be added with JS here -->
             </select>
-        </label>
-        <label>Overall Rating
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Overall Rating</legend>
+
             <label><input type="radio" id="rating" name="rating" value="1">☆</label>
             <label><input type="radio" id="rating" name="rating" value="2">☆☆</label>
             <label><input type="radio" id="rating" name="rating" value="3">☆☆☆</label>
             <label><input type="radio" id="rating" name="rating" value="4">☆☆☆☆</label>
             <label><input type="radio" id="rating" name="rating" value="5">☆☆☆☆☆</label>
-        </label>
-        <label>Date of Instalation
+        </fieldset>
+        <fieldset>
+            <legend>Date of Instalation</legend>
+
             <input type="date" id="date" name="date" required>
-        </label>
-        <label>Which features did you find useful in the product? <br> Check all that aplly
+        </fieldset>
+
+        <fieldset>
+            <legend>Which features did you find useful in the product? <br> Check all that aplly</legend>
+
             <label><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
             <label><input type="checkbox" id="durability" name="ease of use" value="yes">Ease of Use</label>
             <label><input type="checkbox" id="durability" name="performance" value="yes">Performance</label>
             <label><input type="checkbox" id="durability" name="design" value="yes">Design</label>
-        </label>
-        <label>Written Review (optional)
+        </fieldset>
+
+        <fieldset>
+            <legend>Written Review (optional)</legend>
+
             <textarea name="textarea" id="textarea"></textarea>
-        </label>
-        <label>Your Name
+        </fieldset>
+
+        <fieldset>
+            <legend>Your Name</legend>
+
             <input type="text" id="name" name="name">
-        </label>
+        </fieldset>
 
         <input type="submit" value="Rate the product">
     </form>
