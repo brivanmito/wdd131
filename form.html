@@ -16,10 +16,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Css file Styles -->
+    <link rel="stylesheet" href="styles/form-small.css">
+    <link rel="stylesheet" href="styles/form-large.css">
 
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
-
 
     <script src="scripts/temples.js" defer></script>
     <script src="scripts/form.js" defer></script>
@@ -27,60 +28,62 @@
 </head>
 
 <body>
-    <h1>Product Review</h1>
-    <form method="get" action="review.html">
-        <fieldset>
-            <legend>Product Name</legend>
-
-            <label>Select a product:
-                <select name="pnames" id="pnames" required>
-                    <option value="" disabled selected>Please Select &#9662;</option>
-                    <!-- The remaining options should be added with JS here -->
-                </select>
-            </label>
-            
-        </fieldset>
-
-        <fieldset>
-            <legend>Overall Rating</legend>
-
-            <label><input type="radio" id="rating1" name="rating" value="1">☆</label>
-            <label><input type="radio" id="rating2" name="rating" value="2">☆☆</label>
-            <label><input type="radio" id="rating3" name="rating" value="3">☆☆☆</label>
-            <label><input type="radio" id="rating4" name="rating" value="4">☆☆☆☆</label>
-            <label><input type="radio" id="rating5" name="rating" value="5">☆☆☆☆☆</label>
-        </fieldset>
-        <fieldset>
-            <legend>Date of Instalation</legend>
-            
-            <input type="date" id="date" name="date" required>
-        </fieldset>
-
-        <fieldset>
-            <legend>Which features did you find useful in the product? <br> Check all that aplly</legend>
-
-            <label><input type="checkbox" id="check1" name="durability" value="yes">Durability</label>
-            <label><input type="checkbox" id="check2" name="ease_of_use" value="yes">Ease of Use</label>
-            <label><input type="checkbox" id="check3" name="performance" value="yes">Performance</label>
-            <label><input type="checkbox" id="check4" name="design" value="yes">Design</label>
-        </fieldset>
-
-        <fieldset>
-            <legend>Written Review (optional)</legend>
-            <label>Write your review
-                <textarea name="textarea" id="textarea"></textarea>
-            </label>
-        </fieldset>
-
-        <fieldset>
-            <legend>Your Name</legend>
-            <label>Please type your name:
-                <input type="text" id="name" name="name">
-            </label>
-        </fieldset>
-
-        <input type="submit" value="Rate the product">
-    </form>
+    <main>
+        <h1>Product Review</h1>
+        <form method="get" action="review.html" class="wf1">
+            <fieldset>
+                <legend>Product Name</legend>
+        
+                <label>Select a product:
+                    <select name="pnames" id="pnames" required>
+                        <option value="" disabled selected>Please Select &#9662;</option>
+                        <!-- The remaining options should be added with JS here -->
+                    </select>
+                </label>
+        
+            </fieldset>
+        
+            <fieldset>
+                <legend>Overall Rating</legend>
+        
+                <label><input type="radio" id="rating1" name="rating" value="1">☆</label>
+                <label><input type="radio" id="rating2" name="rating" value="2">☆☆</label>
+                <label><input type="radio" id="rating3" name="rating" value="3">☆☆☆</label>
+                <label><input type="radio" id="rating4" name="rating" value="4">☆☆☆☆</label>
+                <label><input type="radio" id="rating5" name="rating" value="5">☆☆☆☆☆</label>
+            </fieldset>
+            <fieldset>
+                <legend>Date of Instalation</legend>
+        
+                <input type="date" id="date" name="date" required>
+            </fieldset>
+        
+            <fieldset>
+                <legend>Which features did you find useful in the product? <br> Check all that aplly</legend>
+        
+                <label><input type="checkbox" id="check1" name="durability" value="yes">Durability</label>
+                <label><input type="checkbox" id="check2" name="ease_of_use" value="yes">Ease of Use</label>
+                <label><input type="checkbox" id="check3" name="performance" value="yes">Performance</label>
+                <label><input type="checkbox" id="check4" name="design" value="yes">Design</label>
+            </fieldset>
+        
+            <fieldset>
+                <legend>Written Review (optional)</legend>
+                <label>Write your review
+                    <textarea name="textarea" id="textarea"></textarea>
+                </label>
+            </fieldset>
+        
+            <fieldset>
+                <legend>Your Name</legend>
+                <label>Please type your name:
+                    <input type="text" id="name" name="name">
+                </label>
+            </fieldset>
+        
+            <input type="submit" value="Rate the product">
+        </form>
+    </main>
     <footer>
         <p>
             &copy; <span id="currentyear"></span> &#128187; Bryan Mino &#128507; Quevedo, Ecuador
