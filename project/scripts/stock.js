@@ -21,29 +21,49 @@ const promosHeroImg = [
     { name: "Moto G Stylus", brand: "Motorola", type: "Phone", price: "300$" }
 ];
 
-//Apply a filter 
-const phonesCheaper = promosHeroImg.filter(phone => {
-    const priceNumber = parseInt(phone.price.replace("$", ""));
-    return priceNumber < 300;
-});
-
-
-
 document.querySelector("#name-product").textContent = promosHeroImg[0].name;
 document.querySelector("#type-product").textContent = promosHeroImg[0].type;
 
 
-// Adding promotions
-const promotionsSection = document.querySelectorAll("#promotions > div");
-
-promotionsSection.forEach(div => {
-    const nameSection = document.createElement("h3");
-    const typeSection = document.createElement("h4");
-    const buttonSection = document.createElement("button");
+//Apply a filter 
 
 
-});
+// Función que retorna los teléfonos más baratos (< 300$)
+function ObtainingPromotions() {
+    const phonesCheaper = promosHeroImg.filter(phone => {
+        const priceNumber = parseInt(phone.price.replace("$", ""));
+        return priceNumber < 600;
+    });
+    return phonesCheaper; // Retornar el array filtrado
+}
 
+// Función que llena los divs con la info
+function fillingPromotions(promotions) {
+    const promotionsSection = document.querySelectorAll("#promotions > div");
 
+    promotionsSection.forEach((div, index) => {
+        // Limpiar contenido previo
+        const promo = promotions[index];
+        if (promo) {
+            
+            const brandSection = document.createElement("h3");
+            brandSection.textContent = promo.brand;
 
+            const nameSection = document.createElement("h4");
+            nameSection.textContent = promo.name;
 
+            const buttonSection = document.createElement("button");
+            buttonSection.textContent = "Comprar";
+
+            div.appendChild(brandSection);
+            div.appendChild(nameSection);
+            div.appendChild(buttonSection);
+        } else {
+            div.textContent = "Sin datos";
+        }
+    });
+}
+
+// Ejecutamos las funciones
+const promocionesFiltradas = ObtainingPromotions();
+fillingPromotions(promocionesFiltradas);
