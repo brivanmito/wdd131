@@ -31,10 +31,12 @@
         <fieldset>
             <legend>Product Name</legend>
 
-            <select name="pnames" id="pnames" required>
-                <option value="" disabled selected>Please Select &#9662;</option>
-                <!-- The remaining options should be added with JS here -->
-            </select>
+            <label>Select a product:
+                <select name="pnames" id="pnames" required>
+                    <option value="" disabled selected>Please Select &#9662;</option>
+                    <!-- The remaining options should be added with JS here -->
+                </select>
+            </label>
             
         </fieldset>
 
@@ -49,7 +51,7 @@
         </fieldset>
         <fieldset>
             <legend>Date of Instalation</legend>
-
+            
             <input type="date" id="date" name="date" required>
         </fieldset>
 
@@ -57,7 +59,7 @@
             <legend>Which features did you find useful in the product? <br> Check all that aplly</legend>
 
             <label><input type="checkbox" id="check1" name="durability" value="yes">Durability</label>
-            <label><input type="checkbox" id="check2" name="ease of use" value="yes">Ease of Use</label>
+            <label><input type="checkbox" id="check2" name="ease_of_use" value="yes">Ease of Use</label>
             <label><input type="checkbox" id="check3" name="performance" value="yes">Performance</label>
             <label><input type="checkbox" id="check4" name="design" value="yes">Design</label>
         </fieldset>
