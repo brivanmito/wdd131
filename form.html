@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <!-- Meta tags -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131: W02 Assignament: Picture Album - Bryan Mino</title>
+    <meta name="author" content="Bryan Mino">
+    <meta name="description"
+        content="This activity includes a responsive image gallery and a responsive menu using CSS Grid and media queries to ensure proper layout on different screen sizes. Brigham Young University-Idaho, 2025.">
+
+    <!-- Google Fonts preconnected -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Css file Styles -->
+
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+
+</head>
+
+<body>
+    <h1>Product Review</h1>
+    <form method="get" action="review.html">
+        <label>Product Name
+            <select name="pnames" id="pnames" required>
+                <option value="" disabled selected>Please Select &#9662;</option>
+                <!-- The remaining options should be added with JS here -->
+            </select>
+        </label>
+        <label>Overall Rating
+            <label><input type="radio" id="rating" name="rating" value="1">☆</label>
+            <label><input type="radio" id="rating" name="rating" value="2">☆☆</label>
+            <label><input type="radio" id="rating" name="rating" value="3">☆☆☆</label>
+            <label><input type="radio" id="rating" name="rating" value="4">☆☆☆☆</label>
+            <label><input type="radio" id="rating" name="rating" value="5">☆☆☆☆☆</label>
+        </label>
+        <label>Date of Instalation
+            <input type="date" id="date" name="date" required>
+        </label>
+        <label>Which features did you find useful in the product? <br> Check all that aplly
+            <label><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
+            <label><input type="checkbox" id="durability" name="ease of use" value="yes">Ease of Use</label>
+            <label><input type="checkbox" id="durability" name="performance" value="yes">Performance</label>
+            <label><input type="checkbox" id="durability" name="design" value="yes">Design</label>
+        </label>
+        <label>Written Review (optional)
+            <textarea name="textarea" id="textarea"></textarea>
+        </label>
+        <label>Your Name
+            <input type="text" id="name" name="name">
+        </label>
+
+        <input type="submit" value="Rate the product">
+    </form>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> &#128187; Bryan Mino &#128507; Quevedo, Ecuador
+        </p>
+        <p id="lastModified">
+            Last modification: 2025
+        </p>
+    </footer>
+</body>
+
+</html>
