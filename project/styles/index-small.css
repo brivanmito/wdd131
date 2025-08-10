@@ -150,12 +150,14 @@ img {
     background: rgb(60, 60, 157);
     grid-column: 1/2;
     grid-row: 1/2;
+    color: #fff;
 }
 
 #id-promotions2 {
     background: linear-gradient(90deg, rgb(7, 73, 134) 100%, rgba(9, 9, 121, 1) 35%, rgb(8, 3, 86) 0%);
     grid-column: 2/3;
     grid-row: 1/2;
+    color: #fff;
 }
 
 #id-promotions3 {
@@ -168,12 +170,14 @@ img {
     background-color: #242ba4;
     grid-column: 1/3;
     grid-row: 2/3;
+    color: #fff;
 }
 
 #id-promotions5 {
     background-color: #039cfb;
     grid-column: 3/4;
     grid-row: 2/3;
+    color: #080a3e;
 }
 
 #id-promotions6 {
