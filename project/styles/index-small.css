@@ -100,7 +100,7 @@ main {
     padding: 10%;
 }
 
-#hero-text h1 {
+#hero-text h1{
     color: #fff;
     text-align: right;
     display: flex;
@@ -120,7 +120,7 @@ img {
 /* Promotions section */
 #promotions {
     width: 100%;
-    min-height: 60vh;
+    min-height: 100vh;
     border-radius: 15px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -229,4 +229,43 @@ footer {
 footer p{
     padding: 10px;
     color: #fff;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    #hero-text h1 {
+        color: #ffffff;
+        font-size: 18px;
+    }
+    #hero-text h2 {
+        color: #000000;
+        margin: 1rem;
+        font-size: 18px;
+    }
+    body {
+        background-color: #12a7c1;
+    }
+    #hero-section {
+        display: grid;
+        text-align: center;
+    }
+    #promotions {
+        display: block;
+    }
+    #promotions div{
+        margin: 1rem 0;
+    }
+    #values {
+        display: block;
+        margin: 0;
+    }
+    #values img {
+        width: 20%;
+        padding: 0;
+    }
+    #id-services h3{
+        padding: 0;
+    }
+    
+    
 }
