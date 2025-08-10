@@ -54,7 +54,7 @@ function fillingPromotions(promotions) {
             nameSection.textContent = promo.name;
 
             const buttonSection = document.createElement("button");
-            buttonSection.textContent = "Comprar";
+            buttonSection.textContent = "Explore";
 
             div.appendChild(brandSection);
             div.appendChild(nameSection);
