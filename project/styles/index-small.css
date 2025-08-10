@@ -284,12 +284,18 @@ footer p{
     .nav-links li a{
         justify-content: center;
         width: 100%;
+        padding: 1rem;
+    }
+    .Logo{
+        text-align: center;
+        padding-left: 0;
+        margin: 1rem;
     }
     .Logo a{
         text-align: center;
         padding-left: 0;
+        margin: 1rem;
     }
-   
-    
+
     
 }
