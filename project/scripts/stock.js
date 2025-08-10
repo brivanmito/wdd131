@@ -21,6 +21,7 @@ const promosHeroImg = [
     { name: "Moto G Stylus", brand: "Motorola", type: "Phone", price: "300$" }
 ];
 
+
 document.querySelector("#name-product").textContent = promosHeroImg[0].name;
 document.querySelector("#type-product").textContent = promosHeroImg[0].type;
 
