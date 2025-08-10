@@ -164,6 +164,7 @@ img {
     background-color: rgb(24, 174, 203);
     grid-column: 3/5;
     grid-row: 1/2;
+    color: #000000;
 }
 
 #id-promotions4 {
