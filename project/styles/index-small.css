@@ -1,7 +1,8 @@
 :root {
     --primary-color: #fff;
     --accent-color: #0c5fb7;
-    --backgroung-color: #efeaea;;
+    --backgroung-color: #efeaea;
+    --secondary-color: #e0e9f6;
 }
 
 * {
@@ -9,16 +10,22 @@
     padding: 0;
     margin: 0;
 }
+
 body {
     font-family: 'Roboto';
     font-size: 18px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
 .Logo a {
     font-family: 'Play fair Display';
     color: var(--accent-color);
     padding-left: 2rem;
     font-weight: 550;
 }
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -26,34 +33,32 @@ body {
     padding-right: 2rem;
     height: 100%;
     margin: 0;
-    
-
 }
+
 .nav-links li {
     height: 100%;
 }
-.nav-links a{
+
+.nav-links a {
     display: flex;
     align-items: center;
     padding: 0 50px;
     height: 100%;
     text-decoration: none;
     color: black;
-
     transition: transform 0.2s ease;
 }
+
 .nav-links a:active {
-    
     transform: scale(1.2);
-    /* aumenta 20% al hacer clic */
     font-weight: bold;
 }
+
 nav a {
     text-decoration: none;
-    
 }
 
-/* For large views */
+/* Header */
 header {
     background-color: var(--primary-color);
     width: 100%;
@@ -66,36 +71,35 @@ nav {
     height: 100%;
     align-items: center;
 }
+
 .nav-links a:hover {
     background-color: var(--accent-color);
     color: var(--primary-color);
 }
+
+/* Main content */
 main {
-    height: auto;
-    padding: .2rem;
-    height: calc(100vh - 10vh);
+    flex: 1;
+    padding: 0.2rem;
 }
+
 #hero-section {
-    background: #020024;
     background: linear-gradient(90deg, rgb(8, 3, 86) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
     width: 100%;
-    height: 100vh;
+    min-height: 70vh;
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-
-
+    margin-bottom: 1rem;
 }
 
 #hero-section img {
- 
-    height: calc(100vh - 10vh);
+    max-height: 60vh;
     width: auto;
     padding: 10%;
- 
-
 }
+
 #hero-text h1 {
     color: #fff;
     text-align: right;
@@ -103,99 +107,126 @@ main {
     justify-content: center;
     font-size: 3.5rem;
 }
+
 #hero-text h2 {
     color: #000000;
     font-size: 2rem;
-    
 }
+
 img {
     filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.5));
 }
+
+/* Promotions section */
 #promotions {
     width: 100%;
-    height: 98vh;
+    min-height: 60vh;
     border-radius: 15px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin-top: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 1rem 0;
     grid-gap: 1rem;
-
 }
-#promotions button{
+
+#promotions button {
     background-color: #ffffff;
     border: none;
     padding: 1rem;
     margin: 1rem;
     border-radius: 20px;
 }
-#promotions h3, h4{
-    padding: .9rem;
+
+#promotions h3,
+#promotions h4 {
+    padding: 0.9rem;
 }
-#promotions
-h3 {
+
+#promotions h3 {
     color: #fff;
 }
+
 #id-promotions1 {
     background: rgb(60, 60, 157);
-    height: auto;
     grid-column: 1/2;
     grid-row: 1/2;
-    width: 100%;
-
-
 }
 
 #id-promotions2 {
-    background: #020024;
     background: linear-gradient(90deg, rgb(7, 73, 134) 100%, rgba(9, 9, 121, 1) 35%, rgb(8, 3, 86) 0%);
-    height: auto;
     grid-column: 2/3;
     grid-row: 1/2;
-
-
 }
+
 #id-promotions3 {
     background-color: rgb(24, 174, 203);
     grid-column: 3/5;
     grid-row: 1/2;
-    height: auto;
-
-
 }
+
 #id-promotions4 {
     background-color: #242ba4;
     grid-column: 1/3;
     grid-row: 2/3;
-    height: auto;
-
 }
+
 #id-promotions5 {
     background-color: #039cfb;
     grid-column: 3/4;
     grid-row: 2/3;
-    height: auto;
-
-
 }
+
 #id-promotions6 {
     background-color: #9a35de;
     grid-column: 4/5;
     grid-row: 2/3;
-    height: auto;
-
 }
+
 #promotions div {
     border-radius: 15px;
-    height: 100%;
     position: relative;
     overflow: hidden;
 }
+
 #promotions div img {
     position: absolute;
     left: 25%;
     margin-top: 10%;
-    
 }
 
+/* Values section */
+#values {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    margin: 1rem 0;
+}
 
+.id-services h3 {
+    padding: 1rem;
+}
+
+.id-services {
+    text-align: center;
+}
+
+.id-services img {
+    filter: none;
+    width: 25%;
+    padding: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #039cfb;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    margin-top: auto;
+}
+footer p{
+    padding: 10px;
+    color: #fff;
+}

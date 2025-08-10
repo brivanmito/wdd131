@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <!-- Meta tags -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD131: W02 Final Project: Website Phones - Bryan Mino</title>
+    <meta name="author" content="Bryan Mino">
+    <meta name="description"
+        content="This activity corresponds to the final project of WDD131. In this project, all the knowledge acquired throughout the course will be applied according to the grading rubric. The website is focused on selling cell phones.">
+
+    <!-- Google Fonts preconnected -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Css file Styles -->
+    <link rel="stylesheet" href="styles/index-small.css">
+    <link rel="stylesheet" href="styles/form.css">
+
+    <script src="scripts/localStorage.js" defer></script>
+    <script src="scripts/countVisit.js" defer></script>
+
+
+    
+
+</head>
+
+<body>
+    <!-- Header -->
+     <header>
+        <nav>
+            <div class="Logo">
+                <a href="index.html">PhOne Solution</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="review-customers.html">Opinions</a></li>
+                <li><a href="form.html">Contact Us</a></li>
+            </ul>
+        </nav>
+     </header>
+    <main>
+        <h1>Contact Us</h1>
+        <form method="get" action="thanks.html" class="wf1">
+            <fieldset>
+                <legend>Customer Information</legend>
+                <!-- Every input needs to consider six things:
+                 The input type: text, numbers or date and or selection a list.
+                 The name of the input, each name must be unique.
+                 User instructions. 
+                 Value.
+                 requored or not
+                 Placeholder.-->
+                <label>First Name* <input type="text" name="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" required></label>
+                <!-- Change the type to tel for telephone numbers -->
+                <label>Phone <input type="tel" name="phone" placeholder="0123456789"></label>
+                <label>Email* <input type="email" name="email" placeholder="someone@someone.com" required></label>
+                <label>Website <input type="url" name="url" placeholder="https://"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Business Information</legend>
+                <!-- radio group -->
+                <div>Audience</div>
+                <!-- Para que en una lista de botonnes solo se pueda seleccionar uno solo se debe poner el mismo name en todos los botones. -->
+                <label><input type="radio" name="audience" value="beginner"> Personal purchase</label>
+                <label><input type="radio" name="audience" value="intermidiate">Wholesale purchase</label>
+                <label><input type="radio" name="audience" value="advance"> Buy as a gift</label>
+    
+                <!-- Creating a checbox -->
+                <div>Prefered Brands</div>
+                <label><input type="checkbox" name="editing" value="yes"> Samsung</label>
+                <label><input type="checkbox" name="code" value="yes"> Xioami</label>
+                <label><input type="checkbox" name="process" value="yes"> Apple</label>
+                <label><input type="checkbox" name="client" value="yes"> Infinix</label>
+    
+            </fieldset>
+    
+            <fieldset>
+                <legend>Contact availability</legend>
+                <label>Contact Date <input type="date" name="completeDate"></label>
+                <label>Contact time
+                    <select name="subject" id="">
+    
+                        <option value="">Please Select &#9662;</option>
+    
+                        <option value="software">9:00 AM - 12:00 AM</option>
+                        <option value="creative">13:00 PM - 3:00 PM</option>
+                        <option value="info">3:00 PM - 5:00 PM</option>
+                        <option value="data">5:00 PM - 7:00 PM</option>
+                        
+                    </select>
+                </label>
+
+    
+            </fieldset>
+    
+            <input id="submit" type="submit" value="Propose Availability">
+    
+        </form>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> &#128187; Bryan Mino &#128507; Quevedo, Ecuador
+        </p>
+        <p id="visitCounter">Visitas: Cargando...</p>
+    </footer>
+</body>
+
+</html>

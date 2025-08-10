@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="styles/index-small.css">
 
     <script src="scripts/stock.js" defer></script>
+    <script src="scripts/countVisit.js"></script>
 
     
 
@@ -33,20 +34,19 @@
      <header>
         <nav>
             <div class="Logo">
-                <a href="#">PhOne Solution</a>
+                <a href="index.html">PhOne Solution</a>
             </div>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="review-customers.html">Opinions</a></li>
+                <li><a href="form.html">Contact Us</a></li>
             </ul>
         </nav>
      </header>
      <main>
         <div id="hero-section">
             <div>
-                <img id="" src="images/hero-img.png" alt="">
+                <img id="" src="images/hero-img.png" alt="Hero image">
             </div>
             <div id="hero-text">
                 <h1 id="name-product"></h1>
@@ -55,29 +55,50 @@
         </div>
         <div id="promotions">
             <div id="id-promotions1">
-                <img src="images/samsung.webp" alt="" weight="404" height="404">
+                <img src="images/samsung.webp" alt="Samsung" weight="404" height="404" loading="lazy">
             </div>
             <div id="id-promotions2">
-                <img src="images/honor.webp" alt="" weight="666" height="374">
+                <img src="images/honor.webp" alt="" weight="666" height="374" loading="lazy">
             </div>
             <div id="id-promotions3">
-                <img src="images/infinix.webp" alt="" weight="504" height="504">
+                <img src="images/infinix.webp" alt="" weight="504" height="504" loading="lazy">
             </div>
             <div id="id-promotions4">
-                <img src="images/iphone.webp" alt="" weight="510" height="287">
+                <img src="images/iphone.webp" alt="" weight="510" height="287" loading="lazy">
             </div>
             <div id="id-promotions5">
-                <img src="images/xiaomi.webp" alt="" weight="703" height="703">
+                <img src="images/xiaomi.webp" alt="" weight="703" height="703" loading="lazy">
             </div>
             <div id="id-promotions6">
-                <img src="images/pixel.webp" alt="" weight="300" height="300">
+                <img src="images/pixel.webp" alt="" weight="300" height="300"loading="lazy">
             </div>
         </div>
-        
+        <div id="values">
+            <div class="id-services">
+                <h3>Free Shipping</h3>
+                <img src="images/shipping.svg" alt="" weight="200" height="200">
+            </div>
+            <div class="id-services">
+                <h3>Guarantee</h3>
+                <img src="images/verified.svg" alt="" weight="200" height="200">
+            </div>
+            <div class="id-services">
+                <h3>Low Cost</h3>
+                <img src="images/money.svg" alt="" weight="200" height="200">
+            </div>
+            <div class="id-services">
+                <h3>Support 24/7</h3>
+                <img src="images/whatsapp.svg" alt="" weight="200" height="200">
+            </div> 
+            
+        </div>
      </main>
-     <footer>
-
-     </footer>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> &#128187; Bryan Mino &#128507; Quevedo, Ecuador
+        </p>
+        <p id="visitCounter">Visitas: Cargando...</p>
+    </footer>
 </body>
 
 </html>

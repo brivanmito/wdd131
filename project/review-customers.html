@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opiniones de Clientes - PhOne Solution</title>
+    <meta name="author" content="Bryan Mino">
+    <meta name="description" content="Opiniones reales de nuestros clientes satisfechos">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/index-small.css">
+    <link rel="stylesheet" href="styles/testimonials.css">
+
+    <script src="scripts/countVisit.js" defer></script>
+    <script src="scripts/reviewCustomers.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="Logo">
+                <a href="index.html">PhOne Solution</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="review-customers.html">Opinions</a></li>
+                <li><a href="form.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="testimonials-container">
+            <h1 class="testimonials-title">Lo que dicen nuestros clientes</h1>
+    
+            <!-- Contenedor donde se cargarán las opiniones dinámicamente -->
+            <div id="testimonials-list" class="testimonials-list"></div>
+    
+            <!-- Botón para redirigir a la página de contacto -->
+            <div class="add-testimonial">
+                <a href="form.html" class="testimonial-button">¿Quieres compartir tu experiencia?</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> &#128187; Bryan Mino &#128507; Quevedo, Ecuador</p>
+        <p id="visitCounter">Visitas: Cargando...</p>
+    </footer>
+</body>
+
+</html>
